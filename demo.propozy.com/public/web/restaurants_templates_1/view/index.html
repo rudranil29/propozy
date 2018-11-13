@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Chotto Motto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+    <link rel="stylesheet" href="css/style.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+	<script src="js/vendor/angular.js"></script>
+	<script src="js/vendor/angular-ui-router.min.js"></script>
+	<script src="js/vendor/angular-touch.min.js"></script>
+	<script src="js/vendor/angular-carousel.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/router.js"></script>
+	<script src="js/controller.js"></script>
+</head>
+<body ng-app="webApp">
+<div class="wrapper" ng-controller="webCtrl">
+    <div class="body">
+        <div class="navigation">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>    
+                    <a class="navbar-brand" ui-sref="{{ data.header.menu[0].name }}"><img ng-src="{{ data.header.logo }}"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li ui-sref-active="active"><a ui-sref="{{ data.header.menu[0].name }}">{{ data.header.menu[0].name }}</a></li>
+                            <li ui-sref-active="active"><a ui-sref="{{ data.header.menu[1].name }}">{{ data.header.menu[1].name }}</a></li>
+                            <li ui-sref-active="active"><a ui-sref="{{ data.header.menu[2].name }}">{{ data.header.menu[2].name }}</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li ui-sref-active="active"><a ui-sref="{{ data.header.menu[3].name }}">{{ data.header.menu[3].name }}</a></li>
+                            <li ui-sref-active="active"><a ui-sref="{{ data.header.menu[4].name }}">{{ data.header.menu[4].name }}</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+        <div ui-view></div>
+        <section id="menu">
+            <div class="container">
+                <ul class="list-inline text-center">
+                    <li><a ui-sref="{{ data.header.menu[0].name }}">{{ data.header.menu[0].name }}</a></li>
+                    <li><a ui-sref="{{ data.header.menu[2].name }}">{{ data.header.menu[2].name }}</a></li>
+                    <li><a ui-sref="{{ data.header.menu[3].name }}">{{ data.header.menu[3].name }}</a></li>
+                    <li><a ui-sref="{{ data.header.menu[4].name }}">{{ data.header.menu[4].name }}</a></li>
+                </ul>
+                <p class="number text-center">{{ data.header.mobile }}</p>
+            </div>
+        </section>
+        <section id="footer">
+            <p class="copyright text-center">{{ data.header.footer }}</p>
+        </section>
+    </div>
+</div>
+</body>
+</html>

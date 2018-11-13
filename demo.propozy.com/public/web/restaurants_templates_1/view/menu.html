@@ -1,0 +1,62 @@
+<section id="menus">
+    <div class="container">
+        <div class="col-md-12">
+            <div>
+                <h3 class="title">{{ data.menu.menucard1.title }}</h3>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="col-md-6" ng-repeat="menu1 in data.menu.menucard1.dish">
+                <div class="item">
+                    <p class="menu-title">{{ menu1.name }}<span class="right">{{ menu1.price }}</span></p>
+                    <p class="menu-subtitle">{{ menu1.items }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <div>
+                <h3 class="title">{{ data.menu.menucard2.title }}</h3>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="col-md-6" ng-repeat="menu2 in data.menu.menucard2.dish">
+                <div class="item">
+                    <p class="menu-title">{{ menu2.name }}<span class="right">{{ menu2.price }}</span></p>
+                    <p class="menu-subtitle">{{ menu2.items }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <div>
+                <h3 class="title">{{ data.menu.menucard3.title }}</h3>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="col-md-6" ng-repeat="menu3 in data.menu.menucard3.dish">
+                <div class="item">
+                    <p class="menu-title">{{ menu3.name }}<span class="right">{{ menu3.price }}</span></p>
+                    <p class="menu-subtitle">{{ menu3.items }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <div>
+                <h3 class="title">{{ data.menu.menucard4.title }}</h3>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="col-md-6" ng-repeat="menu4 in data.menu.menucard4.dish">
+                <div class="item">
+                    <p class="menu-title">{{ menu4.name }}<span class="right">{{ menu4.price }}</span></p>
+                    <p class="menu-subtitle">{{ menu4.items }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Businnes, Portfolio, Corporate"> 
+	<meta name="Author" content="WebThemez"> 
+    <title>City Cafe Restaurant Bootstrap 4 Website Template</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="elegant_font/style.css" />
+    <!--[if lte IE 7]><script src="elegant_font/lte-ie7.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slider-pro.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="elegant_font/style.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script type="text/javascript" src="js/selectivizr.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="webApp">
+    <div class="wrapper" ng-controller="webCtrl">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="status"></div>
+    </div>
+ 
+    <!-- Header End -->
+    <header>
+        <!-- Navigation Menu start-->
+		
+	<nav id="topNav" class="navbar navbar-default main-menu">
+    <div class="container">
+        <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            ☰
+        </button> 
+		 <a class="navbar-brand page-scroll" href="#slider"><img class="logo" id="logo" ng-src="images/logo.png" alt="logo"></a>
+        <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
+            <ul class="nav navbar-nav">
+                 <li class="active">
+                            <a href="#slider">{{data.header.menu[0].name}}</a>
+                        </li>
+                        <li>
+                            <a href="#about">{{data.header.menu[1].name}}</a>
+                        </li>
+						 <li>
+                            <a href="#services">{{data.header.menu[2].name}}</a>
+                        </li>
+						 <li>
+                            <a href="#menu">{{data.header.menu[3].name}}</a>
+                        </li> 
+                        <li>
+                            <a href="#gallery">{{data.header.menu[4].name}}</a>
+                        </li> 
+                        <li>
+                            <a href="#chefs">{{data.header.menu[5].name}}</a>
+                        </li>
+						 <li>
+                            <a href="#feedback">{{data.header.menu[6].name}}</a>
+                        </li>
+                        <li>
+                            <a href="#contact">{{data.header.menu[7].name}}</a>
+                        </li>
+            </ul> 
+        </div>
+    </div>
+</nav>
+
+        
+    </header>
+    <!-- Header End -->
+
+
+    <section class="slider-pro slider" id="slider">
+        <div class="sp-slides">
+
+            <!-- Slides -->
+            <div class="sp-slide main-slides">
+                <div class="img-overlay"></div>
+
+                <img class="sp-image" ng-src="{{ data.banner[0].image }}" alt="Slider 1"/>
+
+                <h1 class="sp-layer slider-text-big"
+                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+                <span class="highlight-texts">{{ data.banner[0].text1 }}</span>
+                </h1>
+
+                <p class="sp-layer"
+                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
+                {{ data.banner[0].text2 }}
+                </p>
+            </div>
+            <!-- Slides End -->
+
+            <!-- Slides -->
+            <div class="sp-slide main-slides">
+            <div class="img-overlay"></div>
+                <img class="sp-image" ng-src="{{ data.banner[1].image }}" alt="Slider 2"/>
+
+                <h1 class="sp-layer slider-text-big"
+                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+                <span class="highlight-texts">{{ data.banner[1].text1 }}</span>
+                </h1>
+
+                <p class="sp-layer"
+                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
+                {{ data.banner[1].text2 }}
+                </p>
+            </div>
+            <!-- Slides End -->
+
+            <!-- Slides -->
+            <div class="sp-slide main-slides">
+                <div class="img-overlay"></div>
+
+                <img class="sp-image" ng-src="{{ data.banner[2].image }}" alt="Slider 3"/>
+
+                <h1 class="sp-layer slider-text-big"
+                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+                <span class="highlight-texts">{{ data.banner[2].text1 }}</span>
+                </h1>
+
+                <p class="sp-layer"
+                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
+                {{ data.banner[2].text2 }}
+                </p>
+            </div>
+            <!-- Slides End -->
+
+        </div>
+    </section>
+    <!-- Main Slider End -->
+
+
+    <section id="about" class="about-sec section-wrapper description">
+        <div class="container">
+            <div class="row">
+                <!-- Section Header -->
+                <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                    <h2><span class="highlight-text">{{ data.about.title }}</span></h2>   
+                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">{{ data.about.subtitle }}</p>
+                </div>
+                <!-- Section Header End -->
+
+                <div class="col-md-6 col-sm-6 col-xs-12 custom-sec-img wow fadeInDown">
+                    <img ng-src="{{ data.about.image }}" alt="Custom Image">
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 customized-text wow fadeInDown black-ed">
+				<p>{{ data.about.text }}</p>
+                    <div class="row"> 
+                        <div class="col-md-11">
+                            <strong>{{ data.about.label1 }}</strong>
+                            <p>{{ data.about.text1 }}</p>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-11">
+                            <strong>{{ data.about.label2 }}</strong>
+                            <p>{{ data.about.text2 }}</p>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-11">
+                            <strong>{{ data.about.label3 }}</strong>
+                            <p>{{data.about.text3}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section> 
+  
+    <section id="services" class="section-wrapper">
+        <div class="container">
+            <div class="row">
+
+                <!-- Section Header -->
+                <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                    <h2><span class="highlight-text">{{ data.service.title }}</span></h2>
+                   
+                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">{{ data.service.subtitle }}</p>
+                </div>
+                <!-- Section Header End -->
+ 
+                <div class="our-services">
+			 
+		
+		 <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12 text-xs-center wow fadeInDown" data-wow-delay=".2s"ng-repeat="serv in data.service.services">
+						<div class="service-box">
+                            <div class="icon"> <h3>{{ serv.title }}</h3>
+                            </div> 
+                            <p>{{ serv.text }}</p>
+							<img ng-src="{{ serv.image }}" alt="Custom Image">
+						</div> 
+</div>
+
+                     
+                    </div> 
+                    <div class="row">
+                     
+                        <div class="col-md-4 col-sm-4 col-xs-12 text-xs-center wow fadeInDown" data-wow-delay=".1s">
+						<div class="service-box">
+                            <div class="icon">
+                                <i class="icon_star-half_alt"></i><h3>{{ data.service.service1.title1 }}</h3>
+                            </div>
+                            
+                            <p>{{ data.service.service1.text1 }}</p>
+                        </div>
+</div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 text-xs-center wow fadeInDown" data-wow-delay=".1s">
+						<div class="service-box">
+                            <div class="icon">
+                                <i class="icon_music"></i><h3>{{ data.service.service1.title2 }}</h3>
+                            </div>
+                            
+                            <p>{{ data.service.service1.text2 }}</p>
+                        </div>
+</div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 text-xs-center wow fadeInDown" data-wow-delay=".1s">
+						<div class="service-box">
+                            <div class="icon">
+                                <i class="icon_cog"></i><h3>{{ data.service.service1.title3 }}</h3>
+                            </div>
+                            
+                            <p>{{ data.service.service1.text3 }}</p>
+                        </div>
+</div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </section> 
+
+<section class="menus style3" id="menu">
+                <div class="container"> 
+                    <div class="row"> 
+	
+	    <!-- Section Header -->
+                <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                    <h2><span class="highlight-text">{{ data.foodmenu.title }}</span></h2>
+                   
+                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">{{ data.foodmenu.subtitle }}</p>
+                </div>
+                <!-- Section Header End -->
+				
+                        <div class="menus-container"> 
+                                <!-- menu --> 
+                                    <div class="menu row">
+                                        <div class="col-md-12 wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+                                            <div class="menu-column">
+                                                <div class="food col-md-6" ng-repeat="menus in data.foodmenu.menu">
+                                                    <div class="food-desc">
+                                                        <h6 class="food-name">{{ menus.foodname }}</h6>
+                                                        <div class="dots"></div>
+                                                        <div class="food-price">
+                                                            <span>{{ menus.price }}</span>
+                                                        </div><!-- /food-price -->
+                                                    </div><!-- /food-desc -->
+                                                    <div class="food-details">
+                                                        <span>{{ menus.details }}</span>
+                                                    </div><!-- /food-details -->
+                                                </div><!-- /food -->
+                                            </div><!-- /menu-column -->
+                                        </div><!-- /col-md-6 -->
+                                    </div><!-- /row -->
+                                 </div><!-- /menu-carousel -->
+                        </div><!-- /menus-container --> 
+                </div><!-- /container -->
+            </section>
+
+
+    <section id="gallery" class="bgSection portfolio-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Section Header -->
+                <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                    <h2><span class="highlight-text">Gallery</span></h2>
+                   
+                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+                </div>
+                <!-- Section Header End -->
+
+            </div>
+        
+
+        <!-- Works -->
+        <div class="portfolio-works wow fadeIn" data-wow-duration="2s">
+            <div class="gallery col-md-3" ng-repeat="gallery in data.gallery.gal">
+                <a target="_blank" href="{{ gallery.image }}">
+                  <img ng-src="{{ gallery.image }}" alt="5Terre">
+                </a>
+                <div class="desc">{{ gallery.text }}</div>
+              </div>
+        </div>
+        <!-- Works End -->
+    </div>
+
+
+    </section>
+    <!-- Portfolio Section End -->
+
+
+<section id="info" class="info-section">
+<div class="container text-xs-center">
+         <!-- Section Header -->
+                <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                    <h2><span class="highlight-text">{{ data.info.title }}</span></h2>
+                   
+                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">{{ data.info.subtitle }}</p>
+                </div>
+                <!-- Section Header End -->
+        <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+                <h4>{{ data.info.branch }}</h4>
+				<h1 class="text-primary">{{ data.info.n1 }}</h1>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+                <h4>{{ data.info.drinks }}</h4>
+				<h1 class="text-primary">{{ data.info.n2 }}</h1>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+  <h4>{{ data.info.dishes }}</h4>               
+			   <h1 class="text-primary">{{ data.info.n3 }}</h1>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+ <h4>{{ data.info.cutomers }}</h4>               
+			   <h1 class="text-primary">{{ data.info.n4 }}</h1>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section id="chefs" class="bgSection teams-section"> 
+<div class="parallax-overlay"></div>
+        <div class="teams-wrapper wow bounceIn">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Section Header -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                        <h2><span class="highlight-text-inverted">Chefs</span></h2>
+                       
+                        <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+                    </div>
+
+                    <!-- teams Slider -->
+                    <div id="teams" class="owl-carousel teams">
+
+                        <!-- Slides -->
+                        <div class="teams-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                            <img ng-src="{{ data.chefs.team[0].image }}" alt="">
+							<p class="client-info">{{ data.chefs.team[0].name }}</p>
+                            <p>{{ data.chefs.team[0].description }}</p>
+                            
+                        </div>
+                        <!-- Slides End -->
+
+                        <!-- Slides -->
+                        <div class="teams-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                            <img ng-src="{{ data.chefs.team[1].image }}" alt="">
+							<p class="client-info">{{ data.chefs.team[1].name }}</p>
+                            <p>{{ data.chefs.team[0].description }}</p>
+                            
+                        </div>
+                        <!-- Slides End -->
+
+                        <!-- Slides -->
+                        <div class="teams-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                            <img ng-src="{{ data.chefs.team[2].image }}" alt="">
+							 <p class="client-info">{{ data.chefs.team[2].name }}</p>
+                            <p>{{ data.chefs.team[2].description }}</p>
+                           
+                        </div>
+                        <!-- Slides End -->
+
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section> 
+
+  
+    <!-- Clients Section -->
+    <section id="feedback" class="clients-section">
+      <!-- Container Ends -->
+      <div class="container">
+	    <div class="row">
+        <!-- Section Header -->
+              <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                    <h2><span class="highlight-text">{{ data.feedback.title }}</span></h2> 
+                    </div>
+                <!-- Section Header End --> 
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="testimonials">
+            	<div class="active item">
+                  <blockquote><p>{{ data.feedback.comment }}</p></blockquote>
+                  <div class="carousel-info">
+                    <img alt="" ng-src="{{ data.feedback.image }}" class="pull-left">
+                    <div class="pull-left">
+                      <span class="testimonials-name">{{ data.feedback.name }}</span>
+                      <span class="testimonials-post">{{ data.feedback.post }}</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+		 </div>
+      </div><!-- Container Ends -->
+    </section>
+    <!-- Client Section End -->  
+	
+<section id="contact" class="section-wrapper contact-section" data-stellar-background-ratio="0.5">
+    <div class="parallax-overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <!-- Section Header -->
+              <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                    <h2><span class="highlight-text">{{ data.contact.title }}</span></h2>
+                   
+                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">{{ data.contact.subtitle }}</p>
+                </div> 
+                <!-- Section Header End -->
+
+                <div class="contact-details">
+                    <div class="contact-form wow bounceInRight">
+                        <div class="col-md-6 col-xs-12">
+                            <address>
+                                <p>{{ data.contact.address }}</p>
+                                <p>{{ data.contact.mobile }}</p>
+                            </address>
+                        </div> 
+                        <div class="col-md-6 col-xs-12">
+                            <address>
+                                <strong>{{ data.contact.label }}</strong>
+                                <p>{{ data.contact.email }}</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+	
+	
+	
+	
+    <!-- Contact Section End -->
+    <section class="footer-container">
+        <div class="container">
+            <div class="row footer-containertent">
+                <div class="col-md-4">
+                    <img ng-src="{{ data.contact.image }}" alt="">
+                    <p>{{ data.contact.desc }}</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>{{ data.contact.label1 }}</h4>
+                    <p>{{ data.contact.desc1 }}</p>
+                </div>
+                <div class="col-md-4 contac-us">
+                    <h4>{{ data.contact.title }}</h4>
+                    <p>{{ data.contact.desc2 }}</p>
+					<ul>
+                            <li><i class="fa fa-home"></i>{{ data.contact.address }}</li>
+                            <li><i class="fa fa-phone"></i>{{ data.contact.mobile }}</li>
+                            <li><i class="fa fa-envelope-o"></i>{{ data.contact.email }}</li>
+                        </ul> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-containertent">
+
+                    <ul class="footer-social-info">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+					<br/><br/>
+<p>{{ data.contact.copyright }}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- Footer End -->
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script> 
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular/angular-ui-router.min.js"></script>
+    <script src="js/angular/angular-touch.min.js"></script>
+    <script src="js/angular/angular-carousel.min.js"></script>
+    <script src="js/angular/app.js"></script>
+    <script src="js/angular/router.js"></script>
+    <script src="js/angular/controller.js"></script>
+</body>
+</html>

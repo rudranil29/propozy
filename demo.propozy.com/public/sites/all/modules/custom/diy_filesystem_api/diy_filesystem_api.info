@@ -1,0 +1,4 @@
+name = DIY File System API
+description = DIY File System API.
+core = 7.x
+package = "DIY Custom"

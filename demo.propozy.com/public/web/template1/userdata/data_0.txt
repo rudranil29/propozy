@@ -1,0 +1,26 @@
+{
+		"Template1": {
+			"Video" : "",
+			"Menu": [ "","","", ""],
+			"Home": [
+				{"Title":""},
+				{"Description":""}
+			],
+			"About": [
+				{"Title":""},
+				{"Description":""}
+			],
+			"PracticeAreas": [
+				{"Title":""},
+				{"Description":""}
+			],
+			"OURTEAM": [
+				{"Title":""},
+				{"Description":""}
+			],
+			"ContactUs": [
+				{"Title":""},
+				{"Description":""}
+			]
+		}
+	 }

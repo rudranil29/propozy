@@ -1,0 +1,168 @@
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    font-family: "motor";
+    font-size: 18px;
+    line-height: 2.2em;
+    text-transform: none;
+    letter-spacing: .03em;
+    font-weight: 400;
+    font-style: normal;
+	color: #000;
+	border: 25px solid yellow;
+}
+.body {
+	background-color: white;
+}
+.navbar-nav {
+	font-family: "motor";
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: .12em;
+	font-weight: 400;
+	font-style: normal;
+}
+.navbar-right { 
+    margin-right: 0;
+}
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+a.navbar-brand {
+	cursor: auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+.navbar-default {
+	background-color: transparent;
+    background-image: unset;
+    border-color: white;
+    border-radius: 0;
+    box-shadow: unset;
+    padding-top: 20px;
+}
+.navbar-brand img {
+	display: inline-block;
+	height: auto;
+	width: 135px;
+}
+.addresstitle {
+	margin-top: 150px;
+	margin-bottom: 120px;
+	font-family: "motor";
+    font-size: 64px;
+    line-height: 1.5em;
+    text-transform: none;
+    letter-spacing: .02em;
+    font-weight: 400;
+    font-style: normal;
+}
+@media only screen and (max-width: 600px) {
+    .addresstitle {
+		font-size: 25px;
+		line-height: 1em;
+	}
+}
+.image {
+	margin: auto;
+	width: 100%;
+    max-width: 500px;
+	height: auto;
+	margin-bottom:150px; 
+}
+.list-inline li a {
+	color:black;
+	font-family: "motor";
+	text-transform: uppercase;
+	font-size: 26px;
+
+}
+.number {
+	padding-top: 30px;
+	font-family: "motor";
+	text-transform: uppercase;
+	font-size: 26px;
+}
+.copyright {
+	margin:150px 0 150px 0;
+}
+.right {
+	float:right;
+	
+}
+.menu-title {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.2em;
+}
+.menu-subtitle {
+	margin-right: 3em;
+	line-height: 0.3em;
+	font-size: 14px;
+}
+.item {
+	margin: 12px 0 12px 0;
+}
+h3.title {
+	letter-spacing: 0.0166667em;
+	font-size: 45px;
+	font-weight:100;
+	font-style: normal;
+	text-transform: uppercase; 
+	padding: 50px 0 50px 0; 
+}
+section#menus {
+	padding-top:150px; 
+}
+section#menu {
+	margin-top: 85px;
+}
+.cheftext {
+	box-sizing: border-box;
+    width: 66.66000000000001%;
+    margin-right: auto;
+	margin-left: auto;
+	padding: 100px 0 100px 0;
+}
+.thum-image {
+	width:100%;
+	height: auto;
+	margin-bottom:88px;
+}
+.chef-middle-text {
+	font-family: "motor";
+    font-size: 46px;
+    margin: 38.180px 0 38.180px 0;
+    text-transform: none;
+    letter-spacing: .03em;
+    font-weight: 400;
+    font-style: normal;
+}
+.part1 {
+	margin: 50px 0;
+    overflow: hidden;
+}
+.text-margin {
+	margin-bottom: 40px;
+}
+.resrvation-text{
+	padding: 0 55px 0 55px;
+}
+.email-reservation {
+	margin: 50px 0 50px 0;
+	text-align: center;
+}
+.middle {
+	margin: auto;
+}
+#content-contact {
+	margin-top: 250px;
+}

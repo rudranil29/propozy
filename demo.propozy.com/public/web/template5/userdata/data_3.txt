@@ -1,0 +1,9 @@
+{
+		"Template5": {
+			"youtubechannel": "UCMGcXCOm4hDvS3mlJEK2FiQ",
+			"image": [ "http://localhost/propoxy/web/template5/cat362950_1280.jpg.download",
+			"http://localhost/propoxy/web/template5/cat245374_1280.jpg.download",
+			"http://localhost/propoxy/web/template5/kitten402268_1280.jpg.download",
+			"http://localhost/propoxy/web/template5/cat594348_1280.jpg.download"]		
+		}
+	 }

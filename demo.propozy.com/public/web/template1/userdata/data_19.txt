@@ -1,0 +1,25 @@
+{
+		"Template1": {
+			"Menu": [ "Home","About","Practice Area", "Our Team"],
+			"Home": [
+				{"Title":"subscriber10"},
+				{"Description":"Home Description"}
+			],
+			"About": [
+				{"Title":"About Title"},
+				{"Description":"About Description"}
+			],
+			"PracticeAreas": [
+				{"Title":"Practice Areas Title"},
+				{"Description":"Practice Areas Description"}
+			],
+			"OURTEAM": [
+				{"Title":"OUR TEAM Title"},
+				{"Description":"OUR TEAM Description"}
+			],
+			"ContactUs": [
+				{"Title":"Contact Us Title"},
+				{"Description":"Contact Us Description"}
+			]
+		}
+	 }

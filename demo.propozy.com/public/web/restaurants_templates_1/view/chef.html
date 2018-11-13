@@ -1,0 +1,42 @@
+<section>
+    <div class="container">
+        <div class="cheftext">
+            <div class="text-center">
+                <h2>{{ data.chef.title }}</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="part1" ng-repeat="chefs in data.chef.details">
+            <div class="chef-image">
+                <img class="img-responsive thum-image" ng-src="{{ chefs.image }}">
+            </div>
+            <div class="col-md-12 text-margin">
+                <div class="col-md-6">
+                    <div class="left">
+                        <p class="text-center">{{ chefs.title1 }}</p>
+                        <h2 class="chef-middle-text text-center">{{ chefs.title2 }}</h2>
+                        <p class="text-center">{{ chefs.title3 }}</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-chef">
+                        <p class="text">
+                            {{ chefs.text1 }}
+                        </p>
+                        <p class="text">
+                            {{ chefs.text2 }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="logo-image">
+            <img class="img-responsive image" ng-src="{{ data.home.image }}">
+    </div>
+</section>
